@@ -4,9 +4,8 @@ import {
 } from 'react-router-dom'
 
 import Home from './Home';
-import Navbar from './Navbar'
 import Navigation from './Navigation';
-import ProductItem from './ProductItem';
+import Example from './Example';
 import Register from './Register';
 
 class App extends Component{
@@ -14,11 +13,12 @@ class App extends Component{
         return(
             <BrowserRouter>
             <div>
-            <Navbar/>
+
 
             <Route path="/" exact component={Home}/>
             <Route path="/register" component={Register}/>
-            
+            <Route path="/nav" component={Navigation}/>
+            <Route path="example" component={Example}/>
             
             </div>
             
