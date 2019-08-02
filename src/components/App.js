@@ -10,7 +10,7 @@ import Register from './Register';
 import DetailProduct from './DetailProduct';
 import NotFound from './NotFound';
 import Footer from './Footer';
-
+import Food from './Food';
 
 class App extends Component{
     render(){
@@ -24,7 +24,7 @@ class App extends Component{
             <Route path="/nav" component={Navigation}/>
             <Route path="example" component={Example}/>
             <Route path="/detailproduct" component={DetailProduct}/>
-            
+            <Route path="/food" component={Food}/>
             
             
             

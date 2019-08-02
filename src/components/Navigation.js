@@ -176,12 +176,12 @@ class Navigation extends Component {
                                     </ModalBody>
                                     <ModalFooter>
                                     Do not have an account? 
-                        <Link to="/register"> Sign up</Link>
+                        <Link to="/register" onClick={this.toggleLogin.bind(this)}> Sign up</Link>
                                         <Button color="success" onClick={this.toggleLogin.bind(this)}>Login</Button>
                                     </ModalFooter>
                                 </Modal>
                                 <Link to="/register">
-                            <button type="button" className="ml-3 btn btn-success">Register</button>
+                            <button type="button" className="ml-3 btn btn-success" >Register</button>
                             </Link>
                         </Nav>
                     </Collapse>

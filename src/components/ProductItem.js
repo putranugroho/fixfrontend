@@ -78,7 +78,7 @@ class ProductItem extends Component{
 
             >
                 <img  src={item.link} className="card-img-top" width="200px" length="200px" alt="Not Available"/>
-                    <h5 className="card-title">{item.name}}</h5>
+                    <h5 className="card-title">{item.name}</h5>
                     
 
                     <h6 className="card-subtitle mb-2 text-muted">{item.price}</h6>
