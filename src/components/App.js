@@ -9,6 +9,8 @@ import Example from './Example';
 import Register from './Register';
 import DetailProduct from './DetailProduct';
 import NotFound from './NotFound';
+import Footer from './Footer';
+
 
 class App extends Component{
     render(){
@@ -31,6 +33,7 @@ class App extends Component{
             </Switch>
             </div>
             
+            <Footer className="fixed-bottom"/>
             </BrowserRouter>
         )
     }
