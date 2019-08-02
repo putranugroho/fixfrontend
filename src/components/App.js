@@ -11,6 +11,7 @@ import DetailProduct from './DetailProduct';
 import NotFound from './NotFound';
 import Footer from './Footer';
 import Food from './Food';
+import Event from './Event';
 
 class App extends Component{
     render(){
@@ -25,6 +26,7 @@ class App extends Component{
             <Route path="example" component={Example}/>
             <Route path="/detailproduct" component={DetailProduct}/>
             <Route path="/food" component={Food}/>
+            <Route path="/event" component={Event}/>
             
             
             
