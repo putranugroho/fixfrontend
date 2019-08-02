@@ -15,6 +15,12 @@ import Events from './Events';
 import Flights from './Flights';
 import Hotels from './Hotels';
 import Login from './Login';
+import Orders from './seller/Orders';
+import Cart from './customer/Cart';
+import SellerDashboard from './seller/SellerDashboard';
+import Checkout from './paymentSystem/CheckOut';
+import CustomerDashboard from './customer/CustomerDashboard';
+import SellerStore from './SellerStore';
 
 class App extends Component{
     render(){
@@ -33,9 +39,12 @@ class App extends Component{
                             <Route path="/events" component={Events}/>
                             <Route path="/flights" component={Flights}/>
                             <Route path="/hotels" component={Hotels}/>
-                            
-                            
-                            
+                            <Route path="/orders" component={Orders}/>
+                            <Route path="/checkout" component={Checkout}/>
+                            <Route path="/cart" component={Cart}/>
+                            <Route path="/sellerdashboard" component={SellerDashboard}/>
+                            <Route path="/customerdashboard" component={CustomerDashboard}/>
+                            <Route path="/sellerstore" component={SellerStore}/>
                             
                             <Route component={NotFound}/>
                         </Switch>
