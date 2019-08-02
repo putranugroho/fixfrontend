@@ -22,7 +22,7 @@ const items = [
 ];
 
 
-class Event extends Component{
+class Events extends Component{
     constructor(props) {
         super(props);
         this.state = { activeIndex: 0 };
@@ -126,5 +126,5 @@ class Event extends Component{
             );
         }
 }
-export default Event
+export default Events
 

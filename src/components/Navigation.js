@@ -35,17 +35,30 @@ class Navigation extends Component {
     
     experience = () => {
         const experienceList = [
-            'Flights',
-            'Hotel',
-            'Event',
-            'Eats'
+            {
+                name : 'Flights',
+                link: '/flights'
+            },{
+                name: 'Hotel',
+                link: '/hotels'
+            },
+            {
+                name: 'Event',
+                link: '/events'
+            },
+            {
+                name: 'Eats',
+                link: '/eats'
+            }
         ]
 
         return experienceList.map( item => {
             return (
-                <DropdownItem>
-                    {item}
-                </DropdownItem>
+                <Link to={item.link}>
+                    <DropdownItem>
+                        {item.name}
+                    </DropdownItem>
+                </Link>
             )
         })
     }

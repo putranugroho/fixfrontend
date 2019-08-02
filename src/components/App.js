@@ -10,32 +10,37 @@ import Register from './Register';
 import DetailProduct from './DetailProduct';
 import NotFound from './NotFound';
 import Footer from './Footer';
-import Food from './Food';
-import Event from './Event';
+import Eats from './Eats';
+import Events from './Events';
+import Flights from './Flights';
+import Hotels from './Hotels';
+import Login from './Login';
 
 class App extends Component{
     render(){
         return(
             <BrowserRouter>
-            <div>
-            <Navigation/>
-            <Switch>
-            <Route path="/" exact component={Home}/>
-            <Route path="/register" component={Register}/>
-            <Route path="/nav" component={Navigation}/>
-            <Route path="example" component={Example}/>
-            <Route path="/detailproduct" component={DetailProduct}/>
-            <Route path="/food" component={Food}/>
-            <Route path="/event" component={Event}/>
-            
-            
-            
-            
-            <Route component={NotFound}/>
-            </Switch>
-            </div>
-            
-            <Footer className="fixed-bottom"/>
+                <Navigation/>
+                    <div>
+                        <Switch>
+                            <Route path="/" exact component={Home}/>
+                            <Route path="/register" component={Register}/>
+                            <Route path="/login" component={Login}/>
+                            <Route path="/nav" component={Navigation}/>
+                            <Route path="example" component={Example}/>
+                            <Route path="/detailproduct" component={DetailProduct}/>
+                            <Route path="/eats" component={Eats}/>
+                            <Route path="/events" component={Events}/>
+                            <Route path="/flights" component={Flights}/>
+                            <Route path="/hotels" component={Hotels}/>
+                            
+                            
+                            
+                            
+                            <Route component={NotFound}/>
+                        </Switch>
+                    </div>
+                <Footer className="fixed-bottom"/>
             </BrowserRouter>
         )
     }

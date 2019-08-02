@@ -8,7 +8,7 @@ const bgStyle = {
     alignSelf: 'stretch'
 }
 
-class Food extends Component{
+class Eats extends Component{
 
     renderFoodType = () => {
         const foodType = [
@@ -74,4 +74,4 @@ class Food extends Component{
         )
     }
 }
-export default Food
+export default Eats
